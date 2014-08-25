@@ -45,7 +45,7 @@ set guifont=Monaco:h12
 
 " Main Colors
 hi Normal             guifg=#dcdccc ctermfg=188   guibg=#3f3f3f ctermbg=237 gui=none
-hi Visual		      guifg=#FFFFFF ctermfg=15    guibg=#555753 ctermbg=240 gui=none 
+hi Visual             guifg=#FFFFFF ctermfg=15    guibg=#555753 ctermbg=240 gui=none
 hi String             guifg=#96ff00 ctermfg=118                             gui=none
 hi Delimiter          guifg=#96ff00 ctermfg=118                             gui=none
 hi Boolean            guifg=#ff44cc ctermfg=206                             gui=none
@@ -63,28 +63,28 @@ hi Function           guifg=#FFFFFF ctermfg=15                              gui=
 hi Define             guifg=#FF9900 ctermfg=208                             gui=none
 hi LineNr             guifg=#FFFFFF ctermfg=15                              gui=none
 hi ColorColumn        guibg=#484848 ctermbg=238
-hi CursorLine         guibg=#434443 ctermbg=238    cterm=none    gui=none
-hi CursorLineNr       guifg=#d2d39b guibg=#262626  ctermfg=230   ctermbg=235
-
+hi CursorLine         guibg=#434443 ctermbg=238    cterm=none               gui=none
+hi CursorLineNr       guifg=#d2d39b guibg=#262626  ctermfg=230  ctermbg=235
+hi SignColumn         guifg=#9fafaf guibg=#181818                           gui=bold
 
 
 " Vim Stuff
-hi vimGroup           guifg=#FFFFFF ctermfg=15                    gui=none
-hi vimHiGroup         guifg=#FFFFFF ctermfg=15                    gui=none
-hi vimSetEqual        guifg=#FF44CC ctermfg=206                   gui=none
-hi vimSet             guifg=#FF44CC ctermfg=206                   gui=none
-hi vimOption          guifg=#FFFFFF ctermfg=15                    gui=none
-hi vimHighLight       guifg=#FF9900 ctermfg=208                   gui=none
-hi vimNotFunc         guifg=#FF9900 ctermfg=208                   gui=none
-hi vimCommand         guifg=#FF9900 ctermfg=208                   gui=none
+hi vimGroup             guifg=#FFFFFF ctermfg=15                  gui=none
+hi vimHiGroup           guifg=#FFFFFF ctermfg=15                  gui=none
+hi vimSetEqual          guifg=#FF44CC ctermfg=206                 gui=none
+hi vimSet               guifg=#FF44CC ctermfg=206                 gui=none
+hi vimOption            guifg=#FFFFFF ctermfg=15                  gui=none
+hi vimHighLight         guifg=#FF9900 ctermfg=208                 gui=none
+hi vimNotFunc           guifg=#FF9900 ctermfg=208                 gui=none
+hi vimCommand           guifg=#FF9900 ctermfg=208                 gui=none
 
 " C Stuff
 hi cCharacter           guifg=#FF9900 ctermfg=208                 gui=none
 
 " Javascript Stuff
-hi javaScript		    guifg=#FFFFFF ctermfg=15                  gui=none 
-hi javaScriptGlobal		guifg=#FFFFFF ctermfg=15                  gui=none 
-hi javaScriptNumber		guifg=#00c99b ctermfg=42                  gui=none 
+hi javaScript           guifg=#FFFFFF ctermfg=15                  gui=none
+hi javaScriptGlobal     guifg=#FFFFFF ctermfg=15                  gui=none
+hi javaScriptNumber     guifg=#00c99b ctermfg=42                  gui=none
 hi javaScriptIdentifier guifg=#FF9900 ctermfg=208                 gui=none
 hi javaScriptOperator   guifg=#FF9900 ctermfg=208                 gui=none
 hi javaScriptFunction   guifg=#FF9900 ctermfg=208                 gui=none
@@ -93,35 +93,35 @@ hi javaScriptNull       guifg=#ff44cc ctermfg=206                 gui=none
 hi javaScriptMember     guifg=#00c900 ctermfg=2                   gui=none
 
 " Ruby Stuff
-hi rubySymbol           guifg=#009cff ctermfg=39                  gui=none
-hi rubyClassDeclaration guifg=#ff9900 ctermfg=208                 gui=none
-hi rubyRailsUserClass   guifg=#fce94f ctermfg=221                 gui=none
-hi rubyConstant         guifg=#fce94f ctermfg=221                 gui=none
-hi erubyExpression      guifg=#ff9900 ctermfg=208                 gui=none
-hi erubyDelimiter       guifg=#ff9900 ctermfg=208                 gui=none
-hi rubyRegexp           guifg=#ff44cc ctermfg=206                 gui=none
-hi rubyRegexpCharClass  guifg=#ff44cc ctermfg=206                 gui=none
-hi rubyRegexpDelimiter  guifg=#ff44cc ctermfg=206                 gui=none
-hi rubyRegexpQuantifier guifg=#ff44cc ctermfg=206                 gui=none
-hi rubyInstanceVariable guifg=#00c900 ctermfg=2                   gui=none
-hi rubyKeywordAsMethod  guifg=#ff44cc ctermfg=206                 gui=none
-hi rubyPseudoVariable   guifg=#ff44cc ctermfg=206                 gui=none
-hi rubyControl          guifg=#FF9900 ctermfg=208                 gui=none
-hi rubyBlockParameter   guifg=#FFFFFF ctermfg=15                  gui=none
+hi rubySymbol               guifg=#009cff ctermfg=39              gui=none
+hi rubyClassDeclaration     guifg=#ff9900 ctermfg=208             gui=none
+hi rubyRailsUserClass       guifg=#fce94f ctermfg=221             gui=none
+hi rubyConstant             guifg=#fce94f ctermfg=221             gui=none
+hi erubyExpression          guifg=#ff9900 ctermfg=208             gui=none
+hi erubyDelimiter           guifg=#ff9900 ctermfg=208             gui=none
+hi rubyRegexp               guifg=#ff44cc ctermfg=206             gui=none
+hi rubyRegexpCharClass      guifg=#ff44cc ctermfg=206             gui=none
+hi rubyRegexpDelimiter      guifg=#ff44cc ctermfg=206             gui=none
+hi rubyRegexpQuantifier     guifg=#ff44cc ctermfg=206             gui=none
+hi rubyInstanceVariable     guifg=#00c900 ctermfg=2               gui=none
+hi rubyKeywordAsMethod      guifg=#ff44cc ctermfg=206             gui=none
+hi rubyPseudoVariable       guifg=#ff44cc ctermfg=206             gui=none
+hi rubyControl              guifg=#FF9900 ctermfg=208             gui=none
+hi rubyBlockParameter       guifg=#FFFFFF ctermfg=15              gui=none
 hi rubyBlockParameterList   guifg=#FFFFFF ctermfg=15              gui=none
 
 " HTML Stuff
-hi htmlTag              guifg=#00c900 ctermfg=2                   gui=none
-hi htmlTagN             guifg=#00c900 ctermfg=2                   gui=none
-hi htmlSpecialTagName   guifg=#00c900 ctermfg=2                   gui=none
-hi htmlEndTag           guifg=#00c900 ctermfg=2                   gui=none
-hi htmlArg              guifg=#009cff ctermfg=39                  gui=none
-hi htmlString           guifg=#96ff00 ctermfg=118                 gui=none
-hi htmlTagName          guifg=#00c900 ctermfg=2                   gui=none
-hi htmlLink             guifg=#FFFFFF ctermfg=15                  gui=none
-hi htmlComment          guifg=#FFFFFF ctermfg=15                  gui=none
-hi htmlCommentPart      guifg=#BBBBBB ctermfg=250                 gui=none
-hi htmlCSSStyleComment  guifg=#BBBBBB ctermfg=250                 gui=none
+hi htmlTag                  guifg=#00c900 ctermfg=2               gui=none
+hi htmlTagN                 guifg=#00c900 ctermfg=2               gui=none
+hi htmlSpecialTagName       guifg=#00c900 ctermfg=2               gui=none
+hi htmlEndTag               guifg=#00c900 ctermfg=2               gui=none
+hi htmlArg                  guifg=#009cff ctermfg=39              gui=none
+hi htmlString               guifg=#96ff00 ctermfg=118             gui=none
+hi htmlTagName              guifg=#00c900 ctermfg=2               gui=none
+hi htmlLink                 guifg=#FFFFFF ctermfg=15              gui=none
+hi htmlComment              guifg=#FFFFFF ctermfg=15              gui=none
+hi htmlCommentPart          guifg=#BBBBBB ctermfg=250             gui=none
+hi htmlCSSStyleComment      guifg=#BBBBBB ctermfg=250             gui=none
 
 " CSS Stuff
 hi cssTagName               guifg=#FFFFFF ctermfg=15              gui=none
@@ -149,11 +149,11 @@ hi cssColorAttr             guifg=#009cff ctermfg=39              gui=none
 hi cssGeneratedContentProp  guifg=#FF9900 ctermfg=39              gui=none
 
 " PHP Stuff
-hi phpParent            guifg=#FFFFFF ctermfg=15                  gui=none
-hi phpInclude           guifg=#FF9900 ctermfg=208                 gui=none
-hi phpIdentifier        guifg=#00c900 ctermfg=2                   gui=none
-
+hi phpParent                guifg=#FFFFFF ctermfg=15              gui=none
+hi phpInclude               guifg=#FF9900 ctermfg=208             gui=none
+hi phpIdentifier            guifg=#00c900 ctermfg=2               gui=none
+hi phpDefineClassName       guifg=#009cff ctermfg=39              gui=none
 " XML Stuff
-hi xmlTag               guifg=#bb66ff ctermfg=42                  gui=none
-hi xmlTagName           guifg=#bb66ff ctermfg=42                  gui=none
-hi xmlEndTag            guifg=#bb66ff ctermfg=42                  gui=none
+hi xmlTag                   guifg=#bb66ff ctermfg=42             gui=none
+hi xmlTagName               guifg=#bb66ff ctermfg=42             gui=none
+hi xmlEndTag                guifg=#bb66ff ctermfg=42             gui=none
