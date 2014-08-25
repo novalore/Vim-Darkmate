@@ -61,12 +61,11 @@ hi Conditional        guifg=#FF9900 ctermfg=208                             gui=
 hi Exception          guifg=#FF9900 ctermfg=208                             gui=none
 hi Function           guifg=#FFFFFF ctermfg=15                              gui=none
 hi Define             guifg=#FF9900 ctermfg=208                             gui=none
-hi LineNr             guifg=#FFFFFF ctermfg=15                              gui=none
+hi LineNr             guifg=#00c99b guibg=#262626  ctermfg=006 ctermbg=000  gui=bold
 hi ColorColumn        guibg=#484848 ctermbg=238
 hi CursorLine         guibg=#434443 ctermbg=238    cterm=none               gui=none
 hi CursorLineNr       guifg=#d2d39b guibg=#262626  ctermfg=230  ctermbg=235
-hi SignColumn         guifg=#9fafaf guibg=#181818                           gui=bold
-
+hi SignColumn         guifg=#181818 guibg=#262626  ctermfg=230  ctermbg=235 gui=bold
 
 " Vim Stuff
 hi vimGroup             guifg=#FFFFFF ctermfg=15                  gui=none
