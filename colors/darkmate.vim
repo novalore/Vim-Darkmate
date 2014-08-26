@@ -40,119 +40,116 @@ au WinLeave * set nocursorline nocursorcolumn
 au WinEnter * set cursorline
 set cursorline 
 
-" Font
-set guifont=Monaco:h12
-
 " Main Colors
-hi Normal             guifg=#dcdccc ctermfg=188   guibg=#3f3f3f ctermbg=237 gui=none
-hi Visual             guifg=#FFFFFF ctermfg=15    guibg=#555753 ctermbg=240 gui=none
-hi String             guifg=#96ff00 ctermfg=118                             gui=none
-hi Delimiter          guifg=#96ff00 ctermfg=118                             gui=none
-hi Boolean            guifg=#ff44cc ctermfg=206                             gui=none
-hi Constant           guifg=#FFFFFF ctermfg=15                              gui=none
-hi Number             guifg=#00c99b ctermfg=42                              gui=none
-hi Statement          guifg=#FF9900 ctermfg=208                             gui=none
-hi Character          guifg=#FF9900 ctermfg=208                             gui=none
-hi Comment            guifg=#bb66ff ctermfg=135                             gui=none
-hi Repeat             guifg=#FF9900 ctermfg=208                             gui=none
-hi Type               guifg=#009cff ctermfg=39                              gui=none
-hi Label              guifg=#FF9900 ctermfg=208                             gui=none
-hi Conditional        guifg=#FF9900 ctermfg=208                             gui=none
-hi Exception          guifg=#FF9900 ctermfg=208                             gui=none
-hi Function           guifg=#FFFFFF ctermfg=15                              gui=none
-hi Define             guifg=#FF9900 ctermfg=208                             gui=none
-hi LineNr             guifg=#00c99b guibg=#1c1c1c  ctermfg=42 ctermbg=234  gui=bold
-hi ColorColumn        guibg=#484848 ctermbg=239
-hi CursorLine         guibg=#434443 ctermbg=239    ctermfg=none               gui=none
-hi CursorLineNr       guifg=#5f005f guibg=#1c1c1c  ctermfg=53  ctermbg=234
-hi SignColumn         guifg=#1c1c1c guibg=#262626  ctermfg=234  ctermbg=235 gui=bold
-
+hi Normal                   guifg=#dcdccc guibg=#3f3f3f  ctermfg=188  ctermbg=237 gui=NONE
+hi Visual                   guifg=#FFFFFF guibg=#555753  ctermfg=15   ctermbg=240 gui=NONE
+hi String                   guifg=#96ff00                ctermfg=118              gui=NONE
+hi Delimiter                guifg=#96ff00                ctermfg=118              gui=NONE
+hi Boolean                  guifg=#ff44cc                ctermfg=206              gui=NONE
+hi Constant                 guifg=#FFFFFF                ctermfg=15               gui=NONE
+hi Number                   guifg=#00c99b                ctermfg=42               gui=NONE
+hi Statement                guifg=#ffdf00                ctermfg=220              gui=NONE
+hi Character                guifg=#ffdf00                ctermfg=220              gui=NONE
+hi Comment                  guifg=#bb66ff                ctermfg=135              gui=italic
+hi Repeat                   guifg=#ffdf00                ctermfg=220              gui=NONE
+hi Type                     guifg=#009cff                ctermfg=39               gui=NONE
+hi Label                    guifg=#ffdf00                ctermfg=220              gui=NONE
+hi Conditional              guifg=#ffdf00                ctermfg=220              gui=NONE
+hi Exception                guifg=#ffdf00                ctermfg=220              gui=NONE
+hi Function                 guifg=#FFFFFF                ctermfg=15               gui=NONE
+hi Define                   guifg=#ffdf00                ctermfg=220              gui=NONE
+hi LineNr                   guifg=#5fd789 guibg=#555753  ctermfg=78   ctermbg=240 gui=bold
+hi ColorColumn                            guibg=#484848               ctermbg=239
+hi CursorLine                             guibg=#434443  cterm=NONE   ctermbg=239 gui=NONE
+hi CursorLineNr             guifg=#00d65e guibg=#313131  ctermfg=41   ctermbg=236
+hi SignColumn               guifg=#dcdccc guibg=#3f3f3f  ctermfg=188  ctermbg=237 gui=bold
+hi PMenuSbar                              guibg=#555753  ctermfg=NONE ctermbg=240 gui=NONE
 " Vim Stuff
-hi vimGroup             guifg=#FFFFFF ctermfg=15                  gui=none
-hi vimHiGroup           guifg=#FFFFFF ctermfg=15                  gui=none
-hi vimSetEqual          guifg=#FF44CC ctermfg=206                 gui=none
-hi vimSet               guifg=#FF44CC ctermfg=206                 gui=none
-hi vimOption            guifg=#FFFFFF ctermfg=15                  gui=none
-hi vimHighLight         guifg=#FF9900 ctermfg=208                 gui=none
-hi vimNotFunc           guifg=#FF9900 ctermfg=208                 gui=none
-hi vimCommand           guifg=#FF9900 ctermfg=208                 gui=none
+hi vimGroup                 guifg=#FFFFFF                ctermfg=15               gui=NONE
+hi vimHiGroup               guifg=#FFFFFF                ctermfg=15               gui=NONE
+hi vimSetEqual              guifg=#FF44CC                ctermfg=206              gui=NONE
+hi vimSet                   guifg=#FF44CC                ctermfg=206              gui=NONE
+hi vimOption                guifg=#FFFFFF                ctermfg=15               gui=NONE
+hi vimHighLight             guifg=#ffdf00                ctermfg=220              gui=NONE
+hi vimNotFunc               guifg=#ffdf00                ctermfg=220              gui=NONE
+hi vimCommand               guifg=#ffdf00                ctermfg=220              gui=NONE
 
 " C Stuff
-hi cCharacter           guifg=#FF9900 ctermfg=208                 gui=none
+hi cCharacter               guifg=#ffdf00                ctermfg=220              gui=NONE
 
 " Javascript Stuff
-hi javaScript           guifg=#FFFFFF ctermfg=15                  gui=none
-hi javaScriptGlobal     guifg=#FFFFFF ctermfg=15                  gui=none
-hi javaScriptNumber     guifg=#00c99b ctermfg=42                  gui=none
-hi javaScriptIdentifier guifg=#FF9900 ctermfg=208                 gui=none
-hi javaScriptOperator   guifg=#FF9900 ctermfg=208                 gui=none
-hi javaScriptFunction   guifg=#FF9900 ctermfg=208                 gui=none
-hi javaScriptStatement  guifg=#FF9900 ctermfg=208                 gui=none
-hi javaScriptNull       guifg=#ff44cc ctermfg=206                 gui=none
-hi javaScriptMember     guifg=#00c900 ctermfg=2                   gui=none
+hi javaScript               guifg=#FFFFFF                ctermfg=15               gui=NONE
+hi javaScriptGlobal         guifg=#FFFFFF                ctermfg=15               gui=NONE
+hi javaScriptNumber         guifg=#00c99b                ctermfg=42               gui=NONE
+hi javaScriptIdentifier     guifg=#ffdf00                ctermfg=220              gui=NONE
+hi javaScriptOperator       guifg=#ffdf00                ctermfg=220              gui=NONE
+hi javaScriptFunction       guifg=#ffdf00                ctermfg=220              gui=NONE
+hi javaScriptStatement      guifg=#ffdf00                ctermfg=220              gui=NONE
+hi javaScriptNull           guifg=#ff44cc                ctermfg=206              gui=NONE
+hi javaScriptMember         guifg=#00c900                ctermfg=2                gui=NONE
 
 " Ruby Stuff
-hi rubySymbol               guifg=#009cff ctermfg=39              gui=none
-hi rubyClassDeclaration     guifg=#ff9900 ctermfg=208             gui=none
-hi rubyRailsUserClass       guifg=#fce94f ctermfg=221             gui=none
-hi rubyConstant             guifg=#fce94f ctermfg=221             gui=none
-hi erubyExpression          guifg=#ff9900 ctermfg=208             gui=none
-hi erubyDelimiter           guifg=#ff9900 ctermfg=208             gui=none
-hi rubyRegexp               guifg=#ff44cc ctermfg=206             gui=none
-hi rubyRegexpCharClass      guifg=#ff44cc ctermfg=206             gui=none
-hi rubyRegexpDelimiter      guifg=#ff44cc ctermfg=206             gui=none
-hi rubyRegexpQuantifier     guifg=#ff44cc ctermfg=206             gui=none
-hi rubyInstanceVariable     guifg=#00c900 ctermfg=2               gui=none
-hi rubyKeywordAsMethod      guifg=#ff44cc ctermfg=206             gui=none
-hi rubyPseudoVariable       guifg=#ff44cc ctermfg=206             gui=none
-hi rubyControl              guifg=#FF9900 ctermfg=208             gui=none
-hi rubyBlockParameter       guifg=#FFFFFF ctermfg=15              gui=none
-hi rubyBlockParameterList   guifg=#FFFFFF ctermfg=15              gui=none
+hi rubySymbol               guifg=#009cff                ctermfg=39              gui=NONE
+hi rubyClassDeclaration     guifg=#ff9900                ctermfg=220             gui=NONE
+hi rubyRailsUserClass       guifg=#fce94f                ctermfg=221             gui=NONE
+hi rubyConstant             guifg=#fce94f                ctermfg=221             gui=NONE
+hi erubyExpression          guifg=#ff9900                ctermfg=220             gui=NONE
+hi erubyDelimiter           guifg=#ff9900                ctermfg=220             gui=NONE
+hi rubyRegexp               guifg=#ff44cc                ctermfg=206             gui=NONE
+hi rubyRegexpCharClass      guifg=#ff44cc                ctermfg=206             gui=NONE
+hi rubyRegexpDelimiter      guifg=#ff44cc                ctermfg=206             gui=NONE
+hi rubyRegexpQuantifier     guifg=#ff44cc                ctermfg=206             gui=NONE
+hi rubyInstanceVariable     guifg=#00c900                ctermfg=2               gui=NONE
+hi rubyKeywordAsMethod      guifg=#ff44cc                ctermfg=206             gui=NONE
+hi rubyPseudoVariable       guifg=#ff44cc                ctermfg=206             gui=NONE
+hi rubyControl              guifg=#ffdf00                ctermfg=220             gui=NONE
+hi rubyBlockParameter       guifg=#FFFFFF                ctermfg=15              gui=NONE
+hi rubyBlockParameterList   guifg=#FFFFFF                ctermfg=15              gui=NONE
 
 " HTML Stuff
-hi htmlTag                  guifg=#00c900 ctermfg=2               gui=none
-hi htmlTagN                 guifg=#00c900 ctermfg=2               gui=none
-hi htmlSpecialTagName       guifg=#00c900 ctermfg=2               gui=none
-hi htmlEndTag               guifg=#00c900 ctermfg=2               gui=none
-hi htmlArg                  guifg=#009cff ctermfg=39              gui=none
-hi htmlString               guifg=#96ff00 ctermfg=118             gui=none
-hi htmlTagName              guifg=#00c900 ctermfg=2               gui=none
-hi htmlLink                 guifg=#FFFFFF ctermfg=15              gui=none
-hi htmlComment              guifg=#FFFFFF ctermfg=15              gui=none
-hi htmlCommentPart          guifg=#BBBBBB ctermfg=250             gui=none
-hi htmlCSSStyleComment      guifg=#BBBBBB ctermfg=250             gui=none
+hi htmlTag                  guifg=#00c900                ctermfg=2               gui=NONE
+hi htmlTagN                 guifg=#00c900                ctermfg=2               gui=NONE
+hi htmlSpecialTagName       guifg=#00c900                ctermfg=2               gui=NONE
+hi htmlEndTag               guifg=#00c900                ctermfg=2               gui=NONE
+hi htmlArg                  guifg=#009cff                ctermfg=39              gui=NONE
+hi htmlString               guifg=#96ff00                ctermfg=118             gui=NONE
+hi htmlTagName              guifg=#00c900                ctermfg=2               gui=NONE
+hi htmlLink                 guifg=#ffdf00                ctermfg=220             gui=NONE
+hi htmlComment              guifg=#bb66ff                ctermfg=135             gui=NONE
+hi htmlCommentPart          guifg=#BBBBBB                ctermfg=250             gui=NONE
+hi htmlCSSStyleComment      guifg=#BBBBBB                ctermfg=250             gui=NONE
 
 " CSS Stuff
-hi cssTagName               guifg=#FFFFFF ctermfg=15              gui=none
-hi cssAttributeSelector     guifg=#DDDDDD ctermfg=15              gui=none
-hi cssSelectorOp            guifg=#DDDDDD ctermfg=15              gui=none
-hi cssSelectorOp2           guifg=#DDDDDD ctermfg=15              gui=none
-
-hi cssColorProp             guifg=#FF9900 ctermfg=208             gui=none
-hi cssBoxProp               guifg=#FF9900 ctermfg=208             gui=none
-hi cssTextAttr              guifg=#009cff ctermfg=208             gui=none
-hi cssDefinition            guifg=#009cff ctermfg=135             gui=none
-hi cssFunctionName          guifg=#009cff ctermfg=135             gui=none
-hi cssURL                   guifg=#009cff ctermfg=135             gui=none
-hi cssBoxAttr               guifg=#bb66ff ctermfg=135             gui=none
-hi cssCommonAttr            guifg=#bb66ff ctermfg=135             gui=none
-hi cssStringQQ              guifg=#00c900 ctermfg=135             gui=none
-hi cssColor                 guifg=#00c900 ctermfg=135             gui=none
-hi cssDefinition            guifg=#bb66ff ctermfg=135             gui=none
-hi cssRenderProp            guifg=#009cff ctermfg=39              gui=none
-hi cssTextProp              guifg=#FF9900 ctermfg=39              gui=none
-hi cssTableProp             guifg=#FF9900 ctermfg=39              gui=none
-hi cssFontProp              guifg=#FF9900 ctermfg=39              gui=none
-hi cssFontAttr              guifg=#009cff ctermfg=39              gui=none
-hi cssColorAttr             guifg=#009cff ctermfg=39              gui=none
-hi cssGeneratedContentProp  guifg=#FF9900 ctermfg=39              gui=none
+hi cssTagName               guifg=#FFFFFF                ctermfg=15              gui=NONE
+hi cssAttributeSelector     guifg=#DDDDDD                ctermfg=15              gui=NONE
+hi cssSelectorOp            guifg=#DDDDDD                ctermfg=15              gui=NONE
+hi cssSelectorOp2           guifg=#DDDDDD                ctermfg=15              gui=NONE
+hi cssColorProp             guifg=#ffdf00                ctermfg=220             gui=NONE
+hi cssBoxProp               guifg=#ffdf00                ctermfg=220             gui=NONE
+hi cssTextAttr              guifg=#009cff                ctermfg=220             gui=NONE
+hi cssDefinition            guifg=#009cff                ctermfg=135             gui=NONE
+hi cssFunctionName          guifg=#009cff                ctermfg=135             gui=NONE
+hi cssURL                   guifg=#009cff                ctermfg=135             gui=NONE
+hi cssBoxAttr               guifg=#bb66ff                ctermfg=135             gui=NONE
+hi cssCommonAttr            guifg=#bb66ff                ctermfg=135             gui=NONE
+hi cssStringQQ              guifg=#00c900                ctermfg=135             gui=NONE
+hi cssColor                 guifg=#00c900                ctermfg=135             gui=NONE
+hi cssDefinition            guifg=#bb66ff                ctermfg=135             gui=NONE
+hi cssRenderProp            guifg=#009cff                ctermfg=39              gui=NONE
+hi cssTextProp              guifg=#ffdf00                ctermfg=39              gui=NONE
+hi cssTableProp             guifg=#ffdf00                ctermfg=39              gui=NONE
+hi cssFontProp              guifg=#ffdf00                ctermfg=39              gui=NONE
+hi cssFontAttr              guifg=#009cff                ctermfg=39              gui=NONE
+hi cssColorAttr             guifg=#009cff                ctermfg=39              gui=NONE
+hi cssGeneratedContentProp  guifg=#ffdf00                ctermfg=39              gui=NONE
 
 " PHP Stuff
-hi phpParent                guifg=#FFFFFF ctermfg=15              gui=none
-hi phpInclude               guifg=#FF9900 ctermfg=208             gui=none
-hi phpIdentifier            guifg=#00c900 ctermfg=2               gui=none
-hi phpDefineClassName       guifg=#009cff ctermfg=39              gui=none
+hi phpParent                guifg=#FFFFFF                ctermfg=15              gui=NONE
+hi phpInclude               guifg=#ffdf00                ctermfg=220             gui=NONE
+hi phpIdentifier            guifg=#00c900                ctermfg=2               gui=NONE
+hi phpDefineClassName       guifg=#009cff                ctermfg=39              gui=NONE
+
 " XML Stuff
-hi xmlTag                   guifg=#bb66ff ctermfg=42             gui=none
-hi xmlTagName               guifg=#bb66ff ctermfg=42             gui=none
-hi xmlEndTag                guifg=#bb66ff ctermfg=42             gui=none
+hi xmlTag                   guifg=#bb66ff                ctermfg=42             gui=NONE
+hi xmlTagName               guifg=#bb66ff                ctermfg=42             gui=NONE
+hi xmlEndTag                guifg=#bb66ff                ctermfg=42             gui=NONE
